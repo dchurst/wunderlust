@@ -21,7 +21,7 @@
 
             <p>Let Wunderlust Travel help you plan the trip of your dreams!</p>
 
-            <nav>
+            <nav aria-label="Main Navigation">
                 <ul>
                     <li><a href="#">Destinations</a></li>
                     <li><a href="#">Inspirations</a></li>
@@ -138,6 +138,20 @@
                         <source media="(max-width: 320px)" srcset="images/miranda-blake-S.png">
                         <img src="images/miranda-blake-M.png" alt="Photo of reviewer Miranda Blake">
                     </picture>
+                    <p>Traveling From: London, England</p>
+                    <blockquote>
+                        <p>“I traveled here for business, but my stay was extended. Now it is my home.”</p>
+                    </blockquote>
+                </section>
+
+                <section>
+                    <h3>Max Winter</h3>
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="images/max-winter-L.png">
+                        <source media="(min-width: 321px) and (max-width: 1023px)" srcset="images/max-winter-M.png">
+                        <source media="(max-width: 320px)" srcset="images/max-winter-S.png">
+                        <img src="images/max-winter-M.png" alt="Photo of reviewer Max Winter">
+                    </picture>
                     <p>Traveling From: Berlin, Germany</p>
                     <blockquote>
                         <p>“Great escape from my reality. Beautiful sunsets, wonderful people, great beer.”</p>
@@ -238,10 +252,10 @@
                         <legend id="contact-form">Contact Form</legend>
 
                         <label for="first-name">First Name <span class="required">*</span></label>
-                        <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
+                        <input type="text" id="first-name" name="first-name" autocomplete="given-name" placeholder="Enter first name" required>
 
                         <label for="last-name">Last Name <span class="required">*</span></label>
-                        <input type="text" id="last-name" name="last-name" autocomplete="family-name" required>
+                        <input type="text" id="last-name" name="last-name" autocomplete="family-name" placeholder="Enter last name" required>
 
                         <label for="contact-method">Contact Method</label>
                         <select id="contact-method" name="contact-method" required>
@@ -252,10 +266,10 @@
                         </select>
 
                         <label for="email">Email Address <span class="required">*</span></label>
-                        <input type="email" id="email" name="email" autocomplete="email" required>
+                        <input type="email" id="email" name="email" autocomplete="email" placeholder="Enter Email" required>
 
                         <label for="phone">Phone Number <span class="required">*</span></label>
-                        <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Enter telephone number" required>
 
                         <label for="destination">Destination</label>
                         <select id="destination" name="destination" required>
