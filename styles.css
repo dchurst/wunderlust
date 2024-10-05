@@ -87,7 +87,7 @@ h1, h2, h3 {
     font-style: italic;
 }
 
-h4, p, q, small, nav, button, form {
+h4, p, q, small, nav, button, form, span {
     font-family: "Montserrat", system-ui;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -98,16 +98,12 @@ h1 {
     font-size: 1.75rem;
 }
 
-h2 {
-    font-size: 1.5rem;
-}
-
-h3 {
-    font-size: 1.25rem;
+h2, h3 {
+    font-size: 1.6rem;
 }
 
 h4 {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
 }
 
 p, q, nav, button, form, small {
@@ -222,4 +218,264 @@ nav {
 
 #toggle:checked + label + ul {
     display: block;
+}
+
+/***** MAIN CONTENT STYLING *****/
+
+/* INTRO STYLING */
+
+#intro h2, #intro p {
+    margin: 10px 25px;
+}
+
+#intro h2 {
+    margin-top: 35px;
+}
+
+#intro p {
+    line-height: 1.5;
+}
+
+#img-grid img {
+    margin: 5px 0;
+}
+
+/* PLAN STYLING */
+
+#plan {
+    background-color: var(--yellow);
+}
+
+#plan h3 {
+    margin: 15px 40px;
+    padding-top: 15px;
+}
+
+#plan div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+#plan section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--teal);
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    width: 50%;
+    height: 200px;
+    padding: 15px 50px;
+    margin: 5px 0;
+}
+
+#plan h4 {
+    font-weight: bold;
+    text-wrap: nowrap;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+#plan img {
+    width: 125px;
+    height: auto;
+    margin: 20px;
+}
+
+/* TESTIMONIALS STYLING */
+
+#testimonials h3 {
+    margin: 15px 40px;
+    padding-top: 15px;
+}
+
+#testimonials div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-bottom: 20px;
+}
+
+#testimonials section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 55px;
+}
+
+#testimonials img {
+    width: 125px;
+    height: auto;
+}
+
+#testimonials h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#testimonials p, #testimonials q {
+    font-size: .85rem;
+}
+
+#testimonials q {
+    font-style: italic;
+}
+
+/* ABOUT STYLING */
+
+#about {
+    background-color: var(--blue);
+}
+
+#about h3 {
+    margin: 15px 40px;
+    padding-top: 15px;
+}
+
+#about div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#about section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+#about img {
+    width: 75px;
+    height: 75px;
+}
+
+#about h4, #about p {
+    font-size: 0.85rem;
+}
+
+#about h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+/* CONTACT STYLING */
+
+#contact {
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 75%;
+}
+
+#contact h3 span {
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    font-weight: bold;
+    margin: 5px 0 3px;
+    text-transform: uppercase;
+}
+
+#contact legend {
+    font-weight: bold;
+    padding: 10px 0 3px;
+}
+
+#contact input {
+    border: 2px solid var(--purple);
+    border-radius: 5px;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+}
+
+#contact input[type="radio"] {
+    accent-color: var(--purple);
+    width: 35px;
+    height: 35px;
+}
+
+.required {
+    color: var(--purple);
+}
+
+#names {
+    display: flex;
+    flex-direction: column;
+}
+
+#nums {
+    display: flex;
+    flex-direction: column;
+}
+
+#nums fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+#nums fieldset label {
+    display: flex;
+    align-items: center;
+}
+
+.radio-label {
+    margin-left: 10px;
+}
+
+.custom-select {
+    margin-bottom: 10px;
+}
+
+#contact select {
+    border: 2px solid var(--purple);
+    border-radius: 5px;
+    padding: 10px 5px;
+    width: 100%;
+}
+
+#contact input[type="submit"] {
+    background-color: var(--purple);
+    border-radius: 0;
+    color: var(--white);
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+/* FOOTER STYLING */
+
+footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer p, footer a {
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: .75rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: var(--black);
+    text-decoration: none;
 }
